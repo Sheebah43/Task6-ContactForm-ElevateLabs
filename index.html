@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Site</title>
+  <meta name="description" content="A simple static site deployed on GitHub Pages" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">sheebah43.github.io</h1>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Hiiii!!!!</h2>
+        <p>This is a dummy website for what I'd like to create in the future to keep a track of my projects.</p>
+        <a class="btn" href="#projects">Checkout projects</a>
+      </div>
+    </section>
+
+    <section id="projects" class="cards">
+      <article class="card">
+        <h3>Exhibit A</h3>
+        <p>Ba-ba-bananananananana.</p>
+        <a class="link" href="#">View</a>
+      </article>
+      <article class="card">
+        <h3>Exhibit B</h3>
+        <p>Respect! Power! BANANAAAAAAAAAA!!!.</p>
+        <a class="link" href="#">View</a>
+      </article>
+    </section>
+
+    <section id="about" class="about">
+      <h3>About</h3>
+      <p>I am Sheebah and this is a website showing how I am a wannabe web developer but I heavily depend on Copilot to learn and implement these new concepts because I have a mush for a brain.</p>
+    </section><br>
+
+    <section id="contact" class="about contact-section" aria-labelledby="contact-heading">
+      <h3 id="contact-heading">Contact</h3>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" />
+          <div class="error" id="nameError" aria-live="polite"></div>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" />
+          <div class="error" id="emailError" aria-live="polite"></div>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6"></textarea>
+          <div class="error" id="messageError" aria-live="polite"></div>
+        </div>
+
+        <div class="actions">
+          <button type="submit" id="submitBtn" class="btn">Send Message</button>
+          <div id="formFeedback" class="feedback" role="status" aria-live="polite" tabindex="-1"></div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Sheebah43 — Deployed with GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
